@@ -4,7 +4,7 @@ pipeline {
 		stage('build') {
   			steps {
     				sh 'yarn install'
-    				sh 'yarn test'
+    				sh 'yarn test:headless'
   			}
 		}
     
