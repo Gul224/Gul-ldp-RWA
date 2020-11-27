@@ -1,0 +1,46 @@
+{
+  "baseUrl": "http://ec2-3-21-75-248.us-east-2.compute.amazonaws.com",
+  "projectId": "7s5okt",
+  "integrationFolder": "cypress/tests",
+  "viewportHeight": 1000,
+  "viewportWidth": 1280,
+  "firefoxGcInterval": null,
+  "retries": {
+    "runMode": 2,
+    "openMode": 1
+  },
+  "env": {
+    "apiUrl": "http://localhost:3001",
+    "mobileViewportWidthBreakpoint": 414,
+    "coverage": false,
+    "codeCoverage": {
+      "url": "http://localhost:3001/__coverage__"
+    }
+  },
+  
+
+    "reporterEnabled": "mochawesome",
+    "mochawesomeReporterOptions": {
+        "reportDir": "cypress/results/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+    },
+    "reporter": "cypress-testrail-reporter",
+"reporterOptions": {
+  "host": "https://yourdomain.testrail.com",
+  "username": "username",
+  "password": "password",
+  "projectId": 1,
+  "suiteId": 1
+},
+
+"testFiles": "**/*.{feature,features}"
+}
+    
+  
+
+
+
+
+  
