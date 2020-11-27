@@ -33,11 +33,7 @@
   "password": "password",
   "projectId": 1,
   "suiteId": 1
-},
-
-"testFiles": "**/*.{feature,features}"
 }
-    
   
 
 
