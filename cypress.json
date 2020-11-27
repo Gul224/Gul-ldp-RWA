@@ -23,15 +23,5 @@
         "overwrite": false,
         "html": false,
         "json": true
-    },
-    "reporter": "cypress-testrail-reporter",
-"reporterOptions": {
-  "host": "https://yourdomain.testrail.com",
-  "username": "username",
-  "password": "password",
-  "projectId": 1,
-  "suiteId": 1
-},
-
-"testFiles": "**/*.{feature,features}"
+    }
 }
