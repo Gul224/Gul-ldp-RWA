@@ -73,15 +73,15 @@ it ("Blank fields ", function(){
 
 
   // Login with less then 4 letter password 
-  it ("Password less then 4 Char", function(){
-    cy.visit('/')
-    cy.get('#username')
-    .type('Gul.S')
-    cy.get('#password') 
-    .type('Gul')
-    .click()
-    cy.get('#password-helper-text')
-    .should("have.text", "Password must contain at least 4 characters");
+//   it ("Password less then 4 Char", function(){
+//     cy.visit('/')
+//     cy.get('#username')
+//     .type('Gul.S')
+//     cy.get('#password') 
+//     .type('Gul')
+//     .click()
+//     cy.get('#password-helper-text')
+//     .should("have.text", "Password must contain at least 4 characters");
      // .and("have.text","Password must contain at least 4 characters" );
   //  cy.percySnapshot("Sign In, Password must contain at least 4 characters");
 
