@@ -18,10 +18,6 @@ it ("invalid Username", function(){
     cy.get('#password')  
     .type('Gul1234')
     cy.get('.MuiButton-label').click()
-    cy.getBySel("signin-error")
-      .should("be.visible")
-      .and("have.text", "Username or password is invalid");
-    cy.percySnapshot("Sign In, Invalid Username and Password, Username or Password is Invalid");
   })
 
   // Valid Username, INvalid Password 
@@ -32,10 +28,6 @@ it ("invalid Username", function(){
     cy.get('#password')  
     .type('Gul123')
     cy.get('.MuiButton-label').click()
-    cy.getBySel("signin-error")
-      .should("be.visible")
-      .and("have.text", "Username or password is invalid");
-    cy.percySnapshot("Sign In, Invalid Username and Password, Username or Password is Invalid");
   })
 
   // Invalid Username/Password
@@ -46,10 +38,6 @@ it ("invalid Username", function(){
     cy.get('#password')  
    .type('Gul121113')
     cy.get('.MuiButton-label').click()
-    cy.getBySel("signin-error")
-      .should("be.visible")
-      .and("have.text", "Username or password is invalid");
-    cy.percySnapshot("Sign In, Invalid Username and Password, Username or Password is Invalid");
   })
 
 
