@@ -26,13 +26,18 @@
         "html": false,
         "json": true
     },
-    "reporter": "cypress-testrail-reporter",
-"reporterOptions": {
-  "host": "https://yourdomain.testrail.com",
-  "username": "username",
-  "password": "password",
-  "projectId": 1,
-  "suiteId": 1
+   "reporter": "salty-cypress-testrail-reporter",
+      "reporterOptions": {
+        "domain": "deepthiballa1.testrail.io/",
+        "username": "gulafshan.shaik@zemosolabs.com",
+        "password": "Faygul224",
+        "projectId": 1,
+        "suiteId": 2,
+        "createTestRun": true,
+        "runId": 4,
+        "runName": "Forgot Password"
+      }
+    
 }
   
 
