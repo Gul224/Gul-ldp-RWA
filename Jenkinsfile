@@ -29,5 +29,15 @@ pipeline {
         }
     }
         }
-   
+   stage('Checkoutphp') {
+        steps {
+            sh 'mkdir -p php'
+            dir("php")
+            {
+                git branch: "master",
+                credentialsId: 'Gul224',
+                url: 'https://github.com/Gul224/php_Testcase_Jenkins.git'
+            }
+        }
+    }
 }
